@@ -5,11 +5,11 @@
 # Any lines starting with a # are optional, but their use is encouraged
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
-# SocketKitIO Version - 0.1.0.01
+# SocketKitIO Version - 1.0.1
 
 Pod::Spec.new do |s|
   s.name             = 'SocketKitIO'
-  s.version          = '0.1.0.01'
+  s.version          = '1.0.1'
   s.summary          = 'A short description of SocketKitIO.'
 
 # This description is used to generate tags and improve search results.
@@ -34,7 +34,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '11.0'
   s.source_files = 'Source/**/*.swift'
-  
+
   # s.resource_bundles = {
   #   'SocketKitIO' => ['SocketKitIO/Assets/*.png']
   # }
