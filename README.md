@@ -15,18 +15,75 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+- iOS 11
+- Swift 5
+- Xcode 12
+
 ## Installation
 
-SocketKitIO is available through [CocoaPods](https://cocoapods.org). To install
+SocketKitIO is available through [CocoaPods](https://cocoapods.org/pods/SocketKitIO). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'SocketKitIO'
 ```
 
+or
+
+```SocketKitIOMain
+pod 'SocketKitIO', '~> 1.0'
+
+## Integration In Project
+
+```IntegrationInProject
+import SocketIOClient
+```
+
+## SocketIOClient declaration
+
+```SocketIOClientDeclaration
+let socketIOManager = SocketIOManager(isLog: true)
+```
+
+## SocketIOClient setup
+
+```
+func setupIncoming() {
+    //Initial setup
+    socketIOManager.params(key: "SOCKET_AUTH_KEY", value: "SOCKET_AUTH_TOKEN")
+        .with(url: AppConstant.HTTP.API.SOCKET_IO)
+    socketIOManager.prepareConnection()
+    //Socket response setup
+    //Response One
+    socketIOManager.socketOn(name: "SOCKET_KEY_ONE") {name, data, ack in
+        print("Socket key name: \(name), socket data: \(data)")
+    }
+    socketIOManager.socketOn(name: "SOCKET_KEY_TWO") {name, data, ack in
+        print("Socket key name: \(name), socket data: \(data)")
+    }
+    //...
+    /*
+    //As many as you have need
+    */
+}
+```
+
+## SocketIOClient setup
+
+```
+let emitData = [
+    "key": "value",
+    "key": "value",
+    "key": "value",
+    "key": "value"
+    //....
+]
+socketIOManager.emit(name: "SOCKET_KEY_ONE", params: emitData)
+```
+
 ## Author
 
-arzrasel, rashedgit@gmail.com
+Md. Rashed - Uz - Zaman (Rz Rasel)
 
 ## License
 
