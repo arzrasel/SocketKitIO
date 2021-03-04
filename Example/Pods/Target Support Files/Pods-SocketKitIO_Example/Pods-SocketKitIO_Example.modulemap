@@ -1,0 +1,6 @@
+framework module Pods_SocketKitIO_Example {
+  umbrella header "Pods-SocketKitIO_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

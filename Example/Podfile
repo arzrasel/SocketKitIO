@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'SocketKitIO_Example' do
+  pod 'SocketKitIO', :path => '../'
+
+  target 'SocketKitIO_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

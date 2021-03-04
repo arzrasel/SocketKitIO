@@ -1,0 +1,16 @@
+PODS:
+  - SocketKitIO (0.1.0)
+
+DEPENDENCIES:
+  - SocketKitIO (from `../`)
+
+EXTERNAL SOURCES:
+  SocketKitIO:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SocketKitIO: 8e173ab7d563f4f6a0f21bb51afb3c06dd5f9a28
+
+PODFILE CHECKSUM: b3b1da1280444cefcab742a1925d4a59235fa107
+
+COCOAPODS: 1.10.1

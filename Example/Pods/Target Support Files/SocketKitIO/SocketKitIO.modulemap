@@ -1,0 +1,6 @@
+framework module SocketKitIO {
+  umbrella header "SocketKitIO-umbrella.h"
+
+  export *
+  module * { export * }
+}
