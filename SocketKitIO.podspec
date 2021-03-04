@@ -8,7 +8,7 @@
 # SocketKitIO Version - 0.1.0.00
 
 Pod::Spec.new do |s|
-  s.name             = 'SocketIOKit'
+  s.name             = 'SocketKitIO'
   s.version          = '0.1.0.00'
   s.summary          = 'A short description of SocketKitIO.'
 
